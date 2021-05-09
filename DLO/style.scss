@@ -1,0 +1,304 @@
+body {
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Gobold;
+  color: white;
+  text-transform: uppercase;
+
+  span {
+    color: #fc307b;
+  }
+}
+p {
+  font-family: Euclid;
+  font-size: 18px;
+  line-height: 33px;
+
+  span {
+    font-weight: bold;
+  }
+}
+.dlo {
+  &__hero {
+    padding-top: 150px;
+    color: white;
+    text-align: center;
+    background-image: url('/DLO/BackgroundPattern.png');
+    background-repeat: repeat-x;
+    background-position-y: 100px;
+    @media only screen and (max-width: 1150px) {
+      padding-top: 0px;
+      background-position-y: 50px;
+    }
+
+    .container {
+      border-bottom: 1px solid #333333;
+      padding-bottom: 80px;
+    }
+    &-heading {
+      font-size: 60px;
+      line-height: 65px;
+      position: relative;
+      display: inline-block;
+      @media only screen and (max-width: 1150px) {
+        padding-top: 150px;
+      }
+      @media only screen and (max-width: 768px) {
+        line-height: 80px;
+      }
+      @media only screen and (max-width: 576px) {
+        font-size: 40px;
+        line-height: 53px;
+      }
+      &::after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        bottom: -5.5px;
+        background: #fc307b;
+        left: 0;
+        height: 1px;
+        @media only screen and (max-width: 1300px) {
+          width: 50%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    &-paragraph {
+      font-size: 30px;
+      line-height: 60px;
+      margin-bottom: 80px;
+      @media only screen and (max-width: 768px) {
+        font-size: 26px;
+        line-height: 50px;
+      }
+      @media only screen and (max-width: 576px) {
+        font-size: 18px;
+        line-height: 40px;
+      }
+    }
+    &-img {
+      margin: 80px auto;
+      @media only screen and (max-width: 900px) {
+        max-width: 100%;
+      }
+      @media only screen and (max-width: 576px) {
+        margin: 50px 0;
+      }
+    }
+  }
+  &__features {
+    color: white;
+    padding-top: 80px;
+    background: black;
+    @media only screen and (max-width: 576px) {
+      overflow-x: hidden;
+    }
+    h3 {
+      font-size: 36px;
+      line-height: 40px;
+      position: relative;
+      margin-bottom: 50px;
+      @media only screen and (max-width: 576px) {
+        font-size: 26px;
+        line-height: 33px;
+      }
+      &::after {
+        content: '';
+        background: #fc307b;
+        width: 50px;
+        height: 1px;
+        left: 0;
+        bottom: -25px;
+        position: absolute;
+      }
+    }
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 50px;
+
+      @media only screen and (max-width: 576px) {
+        position: relative;
+        margin-bottom: 0;
+        padding-bottom: 50px;
+        &::after {
+          content: '';
+          position: absolute;
+          background: rgba(0, 0, 0, 0.5);
+          width: 100vw;
+          min-width: 600px;
+          left: 0;
+          top: 0;
+          height: 100%;
+        }
+      }
+
+      &:first-of-type,
+      &:nth-of-type(3) {
+        margin-bottom: 100px;
+        @media only screen and (max-width: 1300px) {
+          img {
+            position: absolute;
+            right: -180px;
+          }
+        }
+        @media only screen and (max-width: 576px) {
+          img {
+            right: -150px;
+          }
+        }
+        @media only screen and (max-width: 400px) {
+          img {
+            right: -100px;
+          }
+        }
+      }
+      &:nth-of-type(2),
+      &:last-of-type {
+        flex-direction: row-reverse;
+        margin-bottom: 100px;
+
+        @media only screen and (max-width: 1300px) {
+          img {
+            position: absolute;
+            left: -180px;
+          }
+        }
+        @media only screen and (max-width: 576px) {
+          img {
+            left: 180px;
+          }
+        }
+        @media only screen and (max-width: 400px) {
+          img {
+            left: -30px;
+          }
+        }
+      }
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      .text {
+        max-width: 837px;
+        @media only screen and (max-width: 1300px) {
+          max-width: 70%;
+        }
+        @media only screen and (max-width: 576px) {
+          position: relative;
+          z-index: 15;
+          max-width: 100%;
+          top: 30px;
+        }
+      }
+    }
+  }
+  &__join {
+    padding-top: 150px;
+    background: url('../images/Background/back.png'),
+      url('../images/Background/high.png') no-repeat;
+    background-position-y: -50px;
+    background-position-x: center;
+    &-heading {
+      font-size: 42px;
+      color: white;
+      margin-bottom: 50px;
+      line-height: 40px;
+      text-align: center;
+    }
+    .bg {
+      border: 1px solid #fc307b;
+      border-left: none;
+      border-right: none;
+      color: white;
+      background-size: cover;
+      background-position: center;
+      background: url('/DLO/join.png');
+      padding: 115px 0;
+      @media only screen and (max-width: 1000px) {
+        background-position-x: -300px;
+      }
+    }
+    .content {
+      max-width: 547px;
+
+      a {
+        margin-top: 100px;
+        display: inline-flex;
+      }
+    }
+  }
+}
+
+.header {
+  .container {
+    .lqd {
+      margin: 0 43px;
+    }
+    .icons {
+      margin-left: auto;
+    }
+    @media only screen and (max-width: 1150px) {
+      justify-content: space-between;
+    }
+  }
+}
+
+.dlo__btn {
+  border-radius: 10px;
+  font-size: 27px;
+  line-height: 37px;
+  font-weight: 500;
+  min-width: 367px;
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px 120px;
+  background: linear-gradient(104deg, #a22dc9 0%, #a22dc9 100%);
+  opacity: 1;
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+  color: white;
+  &::before {
+    content: 'Join today';
+    position: absolute;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    padding: 20px auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(104deg, #fc307b 0%, #a22dc9 100%);
+    transition: opacity 0.5s ease-in-out;
+    z-index: 2;
+  }
+
+  &:hover::before {
+    opacity: 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 23px;
+    line-height: 31px;
+    padding: 36px 5px;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 20px;
+    line-height: 27px;
+    min-width: 100%;
+    padding: 30px 5px;
+    margin-top: 25px;
+  }
+}

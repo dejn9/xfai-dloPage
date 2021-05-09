@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+
+
+body {
+    width:100%;
+    background: black;
+    overflow-x: hidden;
+}
+
+
+
+.container {
+    margin: 0 auto;
+  
+  
+    @media only screen and (min-width:1420px) {
+      max-width: 1280px;
+      width: 1280px;
+    }
+  
+    @media only screen and (max-width:1420px) {
+      max-width: calc(100% - 140px);
+      width: calc(100% - 140px);
+    }
+  
+    @media only screen and (max-width:768px) {
+      max-width: calc(100% - 100px);
+      width: calc(100% - 100px);
+    }
+  
+    @media only screen and (max-width:360px) {
+      max-width: calc(100% - 40px);
+      width: calc(100% - 40px);
+    }
+
+}
+
+h2 {
+    display: inline-block;
+    text-transform: uppercase;
+  letter-spacing: 0px;
+  border-bottom: 2px solid #FC307B;
+}
+
+h1,h2,h3 {
+  font-family: 'Gobold';
+  color:white;
+    span {
+      color:#FC307B;
+    }
+}
+
+ul {
+    list-style: none;
+}
+p {
+ font-family: "EuclidCircular", Arial;
+  span {
+    font-weight: 700;
+  }
+}
+a {
+    text-decoration: none;
+    color:white;
+    display: inline-block;
+   font-family: "EuclidCircular", Arial;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.btn__primary {
+  background: linear-gradient(104deg, #a22dc9  0%, #a22dc9 100%); 
+  &::before {
+    background: linear-gradient(104deg, #fc307b  0%, #a22dc9 100%);
+  }
+  &:first-of-type {
+    padding:24px 50px 29px 55px;
+   
+  }
+  &:last-of-type {
+    padding:24px 75px 29px 75px;
+  }
+  @media only screen and (max-width:600px){
+    &:first-of-type,&:last-of-type {
+      width:100%;
+      text-align: center;
+      padding:15px 5px;
+    }
+    
+   }
+}
+
+  
+.btn__primary,.btn__lightBlue {
+  border-radius: 10px;
+  opacity: 1;
+  position: relative;
+  z-index:15;
+  transition: opacity .5s ease-in-out; 
+  color:white;
+  font-size:20px;
+  line-height: 37px;
+  font-weight: 500;
+  color:white;
+}
+
+.btn__primary::before,.btn__lightBlue::before {
+  content: "";
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .5s ease-in-out; 
+    z-index:-2; 
+}
+
+.btn__primary:hover::before,.btn__lightBlue:hover::before {
+  opacity: 0;
+}
+
+.lity-active,
+.lity-active body {
+    overflow: hidden;
+}

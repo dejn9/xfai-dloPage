@@ -1,0 +1,74 @@
+.backedBy {
+    padding-top: 70px;
+    background: url('../images/Background/back.png') repeat, url('../images/Background/high.png') no-repeat, black;
+    background-position: 50% -520px;
+    width:100%;
+    max-width:100%;
+    
+    &__heading {
+        text-align:center;
+        color: #FC307B;
+        margin-bottom: 45px;
+        font-size: 30px;
+        line-height: 39px;
+        font-family: 'Gobold';
+        font-weight: bold;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        column-gap: auto;
+        border-top: 1px solid #333333;
+        row-gap: 40px;
+        border-bottom: 1px solid #333333;
+        padding:50px 0;
+
+        @media only screen and (max-width:768px){
+            grid-template-columns: repeat(3,1fr);
+            row-gap: 50px;
+        }
+        @media only screen and (max-width:600px){
+            grid-template-columns: repeat(2,1fr);
+        }
+
+
+        img{
+            max-width: 150px;
+            align-self: center;
+            justify-self: center;
+            @media only screen and (max-width:1300px){
+                max-width:120px;
+            }
+            @media only screen and (max-width:1100px){
+                max-width:100px;
+            }
+
+            @media only screen and (max-width:900px){
+                max-width:80px;
+            }
+
+            @media only screen and (max-width:768px){
+                max-width:150px;
+            }
+            
+            @media only screen and (max-width:600px){
+                max-width:100px;
+            }
+           
+          &:nth-of-type(11){
+              grid-column: -5 / -4;
+              @media only screen and (max-width:768px){
+                grid-column: auto;
+            }
+          }
+          &:nth-of-type(13){
+            @media only screen and (max-width:768px){
+               grid-column: -3 / -2;
+            }
+            @media only screen and (max-width:600px){
+                grid-column: -3 / -1;
+            }
+          }
+        }
+    }
+}

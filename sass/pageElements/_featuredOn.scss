@@ -1,0 +1,87 @@
+.featuredOn {
+    &__heading {
+        font-size:30px;
+        line-height: 39px;
+        color:#FC307B;
+        text-transform: uppercase;
+        font-family: Gobold;
+        text-align: center;
+        margin-top: 160px;
+        margin-bottom: 45px;
+        @media only screen and (max-width:768px){
+            margin-top: 125px;
+        }
+        @media only screen and (max-width:360px){
+            margin-top: 113px;
+        }
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6,150px);
+        column-gap: calc((100% - 900px) / 6);
+        border:1px solid #333333;
+        border-left: none;
+        border-right: none;
+        padding:50px 0;
+        row-gap: 40px;
+        align-items: center;
+        @media only screen and (max-width:1150px){
+            grid-template-columns: repeat(3,1fr);
+            column-gap: auto;
+            justify-items: center;
+        }
+        @media only screen and (max-width:668px){
+            grid-template-columns: repeat(2,1fr);
+        }
+       
+        a {
+            img {
+
+                max-width:150px;
+                @media only screen and (max-width:1200px){
+                    max-width: 120px;
+                }
+                @media only screen and (max-width:1150px){
+                    max-width:150px;
+                }
+                @media only screen and (max-width:668px){
+                    max-width: 120px;
+                }
+                @media only screen and (max-width:450px){
+                    max-width: 100px;
+                }
+            }
+            
+           
+            &:nth-of-type(7), &:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(10),&:nth-of-type(11){
+            margin-left: 120px;
+            @media only screen and (max-width:1200px){
+                margin-left: 80px;
+            }
+            @media only screen and (max-width:1150px){
+                margin-left: 0;
+            }
+            }
+           
+            &:nth-of-type(10){
+                @media only screen and (max-width:1150px){
+                   margin-right: -230px;
+                }
+                @media only screen and (max-width:668px){
+                    margin-right: 0;
+                }
+            }
+            &:nth-of-type(11){
+                @media only screen and (max-width:1150px){
+                    margin-right: -230px;
+                }
+                @media only screen and (max-width:668px){
+                    margin-right: 0;
+                    grid-column: -3 / -1;
+                }
+            }
+    
+        }
+        
+    }
+}
