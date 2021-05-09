@@ -71,7 +71,7 @@ p span {
   }
 }
 .dlo__hero-heading::after {
-  content: "";
+  content: "Join today";
   width: 100%;
   position: absolute;
   bottom: -5.5px;
