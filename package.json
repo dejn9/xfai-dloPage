@@ -1,0 +1,22 @@
+{
+  "name": "xfaidlopage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "node-sass --output-style compressed -o dist/css src/scss"
+  },
+  "devDependencies": {
+    "node-sass": "4.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dejn9/xfai-dloPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dejn9/xfai-dloPage/issues"
+  },
+  "homepage": "https://github.com/dejn9/xfai-dloPage#readme"
+}

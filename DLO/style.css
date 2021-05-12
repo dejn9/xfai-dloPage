@@ -22,7 +22,7 @@ h6 span {
 }
 
 p {
-  font-family: Euclid;
+  font-family: "EuclidCircular", Arial;
   font-size: 18px;
   line-height: 33px;
 }
@@ -71,7 +71,7 @@ p span {
   }
 }
 .dlo__hero-heading::after {
-  content: "Join today";
+  content: "";
   width: 100%;
   position: absolute;
   bottom: -5.5px;
@@ -194,6 +194,9 @@ p span {
   margin-bottom: 100px;
 }
 @media only screen and (max-width: 1300px) {
+  .dlo__features-item:nth-of-type(2), .dlo__features-item:last-of-type {
+    margin: 200px 0;
+  }
   .dlo__features-item:nth-of-type(2) img, .dlo__features-item:last-of-type img {
     position: absolute;
     left: -180px;
@@ -227,41 +230,6 @@ p span {
     max-width: 100%;
     top: 30px;
   }
-}
-.dlo__join {
-  padding-top: 150px;
-  background: url("../images/Background/back.png"), url("../images/Background/high.png") no-repeat;
-  background-position-y: -50px;
-  background-position-x: center;
-}
-.dlo__join-heading {
-  font-size: 42px;
-  color: white;
-  margin-bottom: 50px;
-  line-height: 40px;
-  text-align: center;
-}
-.dlo__join .bg {
-  border: 1px solid #fc307b;
-  border-left: none;
-  border-right: none;
-  color: white;
-  background-size: cover;
-  background-position: center;
-  background: url("/DLO/join.png");
-  padding: 115px 0;
-}
-@media only screen and (max-width: 1000px) {
-  .dlo__join .bg {
-    background-position-x: -300px;
-  }
-}
-.dlo__join .content {
-  max-width: 547px;
-}
-.dlo__join .content a {
-  margin-top: 100px;
-  display: inline-flex;
 }
 
 .header .container .lqd {
@@ -327,6 +295,144 @@ p span {
     padding: 30px 5px;
     margin-top: 25px;
   }
+}
+
+@media only screen and (max-width: 1300px) {
+  .joinTheRevolution {
+    padding-top: 150px;
+  }
+}
+.joinTheRevolution .bg {
+  background: url("../images/joinTheRevolution/im4.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  overflow-x: hidden;
+  background-position: 50% 50%;
+  position: relative;
+  border: 1px solid #fc307b;
+  border-left: none;
+  border-right: none;
+}
+.joinTheRevolution .bg::after {
+  content: "";
+  position: absolute;
+  background: url("/images/hero/Rectangle 476.png");
+  top: 0;
+  left: 20%;
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat-y;
+}
+@media only screen and (min-width: 600px) {
+  .joinTheRevolution .bg::after {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .joinTheRevolution .bg::after {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .joinTheRevolution .bg {
+    background-position-x: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .joinTheRevolution .bg {
+    background-position-x: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .joinTheRevolution .bg {
+    background-position-y: 100%;
+    background-size: 912px;
+    background-position-x: 100%;
+    padding-bottom: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .joinTheRevolution .bg {
+    background-position-x: 90%;
+    background-position-y: 105%;
+  }
+}
+.joinTheRevolution .container {
+  padding: 117px 0;
+}
+.joinTheRevolution .container:first-of-type {
+  text-align: center;
+  color: white;
+}
+@media only screen and (max-width: 1000px) {
+  .joinTheRevolution .container:last-of-type {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .joinTheRevolution .container:last-of-type {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.joinTheRevolution .container:last-of-type .left {
+  color: white;
+  text-align: left;
+  max-width: 605px;
+  position: relative;
+  z-index: 5;
+}
+@media only screen and (max-width: 1000px) {
+  .joinTheRevolution .container:last-of-type .left {
+    grid-column: 1/3;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .joinTheRevolution .container:last-of-type .left {
+    position: relative;
+    z-index: 3;
+  }
+  .joinTheRevolution .container:last-of-type .left::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    background-repeat: repeat-x;
+    height: 360px;
+  }
+}
+.joinTheRevolution .container:last-of-type .left p {
+  font-size: 18px;
+  line-height: 33px;
+  margin-bottom: 90px;
+}
+@media only screen and (max-width: 768px) {
+  .joinTheRevolution .container:last-of-type .left p {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .joinTheRevolution .container:last-of-type .left p {
+    font-size: 16px;
+    line-height: 29px;
+  }
+}
+.joinTheRevolution .container-1 {
+  background: url("../images/Background/back.png") repeat, url("../images/Background/high.png") no-repeat, black;
+  background-position: 50% -520px;
+  padding-top: 55px;
+  padding-bottom: 46px;
+}
+@media only screen and (max-width: 1000px) {
+  .joinTheRevolution .container-1 {
+    padding-top: 150px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.joinTheRevolution__heading {
+  margin-bottom: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */
