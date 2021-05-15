@@ -30,6 +30,10 @@ p span {
   font-weight: bold;
 }
 
+a {
+  font-family: "EuclidCircular", Arial;
+}
+
 .dlo__hero {
   padding-top: 150px;
   color: white;
@@ -68,22 +72,6 @@ p span {
   .dlo__hero-heading {
     font-size: 40px;
     line-height: 53px;
-  }
-}
-.dlo__hero-heading::after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  bottom: -5.5px;
-  background: #fc307b;
-  left: 0;
-  height: 1px;
-}
-@media only screen and (max-width: 1300px) {
-  .dlo__hero-heading::after {
-    width: 50%;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 .dlo__hero-paragraph {
@@ -162,7 +150,7 @@ p span {
   .dlo__features-item::after {
     content: "";
     position: absolute;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     width: 100vw;
     min-width: 600px;
     left: 0;
@@ -319,19 +307,15 @@ p span {
   position: absolute;
   background: url("/images/hero/Rectangle 476.png");
   top: 0;
-  left: 20%;
+  left: 0;
   height: 100%;
   width: 100%;
   background-repeat: repeat-y;
 }
-@media only screen and (min-width: 600px) {
-  .joinTheRevolution .bg::after {
-    display: none;
-  }
-}
 @media only screen and (max-width: 600px) {
   .joinTheRevolution .bg::after {
-    display: none;
+    height: 20%;
+    top: 42%;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -433,6 +417,14 @@ p span {
 }
 .joinTheRevolution__heading {
   margin-bottom: 28px;
+  font-size: 42px;
+  line-height: 40px;
+}
+@media only screen and (max-width: 576px) {
+  .joinTheRevolution__heading {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

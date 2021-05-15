@@ -6,9 +6,7 @@
   "scripts": {
     "node-sass": "node-sass --output-style compressed -o dist/css src/scss"
   },
-  "devDependencies": {
-    "node-sass": "4.5.0"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dejn9/xfai-dloPage.git"
@@ -18,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dejn9/xfai-dloPage/issues"
   },
-  "homepage": "https://github.com/dejn9/xfai-dloPage#readme"
+  "homepage": "https://github.com/dejn9/xfai-dloPage#readme",
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  }
 }
