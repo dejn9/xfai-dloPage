@@ -29,7 +29,7 @@ a {
 }
 .dlo {
   &__hero {
-    padding-top: 150px;
+    padding-top: 190px;
     color: white;
     text-align: center;
     background-image: url('/DLO/BackgroundPattern.png');
@@ -39,14 +39,16 @@ a {
       padding-top: 0px;
       background-position-y: 50px;
     }
+    @media only screen and (max-width: 768px) {
+    }
 
     .container {
-      border-bottom: 1px solid #333333;
+      border-bottom: 2px solid #333333;
       padding-bottom: 80px;
     }
     &-heading {
       font-size: 60px;
-      line-height: 65px;
+      line-height: 80px;
       position: relative;
       display: inline-block;
       @media only screen and (max-width: 1150px) {
@@ -54,10 +56,12 @@ a {
       }
       @media only screen and (max-width: 768px) {
         line-height: 80px;
+        margin-top: -10px;
       }
       @media only screen and (max-width: 576px) {
         font-size: 40px;
         line-height: 53px;
+        margin-top: -60px;
       }
     }
     &-paragraph {
@@ -71,6 +75,7 @@ a {
       @media only screen and (max-width: 576px) {
         font-size: 18px;
         line-height: 40px;
+        margin-bottom: 40px;
       }
     }
     &-img {
@@ -92,7 +97,7 @@ a {
     }
     h3 {
       font-size: 36px;
-      line-height: 40px;
+      line-height: 46px;
       position: relative;
       margin-bottom: 50px;
       @media only screen and (max-width: 576px) {
@@ -140,14 +145,17 @@ a {
             right: -180px;
           }
         }
+        @media only screen and (max-width: 768px) {
+          margin-bottom: 50px;
+        }
         @media only screen and (max-width: 576px) {
           img {
-            right: -150px;
+            right: -200px;
           }
         }
         @media only screen and (max-width: 400px) {
           img {
-            right: -100px;
+            right: -200px;
           }
         }
       }
@@ -163,6 +171,9 @@ a {
             left: -180px;
           }
         }
+        @media only screen and (max-width: 768px) {
+          margin-bottom: 50px;
+        }
         @media only screen and (max-width: 576px) {
           img {
             left: 180px;
@@ -170,14 +181,42 @@ a {
         }
         @media only screen and (max-width: 400px) {
           img {
-            left: -30px;
+            left: 50px;
           }
         }
       }
       &:last-of-type {
         margin-bottom: 0;
+        @media only screen and (max-width: 768px) {
+          margin-top: 0px;
+        }
+        @media only screen and (max-width: 576px) {
+          img {
+            left: 30%;
+          }
+        }
+      }
+
+      &:first-of-type {
+        @media only screen and (max-width: 768px) {
+          margin-bottom: -150px;
+        }
+        @media only screen and (max-width: 768px) {
+          margin-bottom: -150px;
+        }
+        @media only screen and (max-width: 576px) {
+          img {
+            left: 30%;
+          }
+        }
+      }
+
+      img {
+        z-index: 0;
       }
       .text {
+        position: relative;
+        z-index: 5;
         max-width: 837px;
         @media only screen and (max-width: 1300px) {
           max-width: 70%;
@@ -216,7 +255,7 @@ a {
   display: inline-flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 20px 120px;
+  padding: 24px 120px;
   background: linear-gradient(104deg, #a22dc9 0%, #a22dc9 100%);
   opacity: 1;
   position: relative;
@@ -231,13 +270,17 @@ a {
     justify-content: center;
     left: 0;
     top: 0;
-    padding: 20px auto;
+    padding: 24px auto;
     width: 100%;
     height: 100%;
     border-radius: 10px;
     background: linear-gradient(104deg, #fc307b 0%, #a22dc9 100%);
     transition: opacity 0.5s ease-in-out;
     z-index: 2;
+    @media only screen and (max-width: 768px) {
+      padding: 19px 5px !important;
+      height: auto;
+    }
   }
 
   &:hover::before {
@@ -247,13 +290,12 @@ a {
   @media only screen and (max-width: 768px) {
     font-size: 23px;
     line-height: 31px;
-    padding: 36px 5px;
+    padding: 19px 5px !important;
   }
   @media only screen and (max-width: 450px) {
     font-size: 20px;
     line-height: 27px;
     min-width: 100%;
-    padding: 30px 5px;
     margin-top: 25px;
   }
 }
@@ -285,9 +327,12 @@ a {
       background-repeat: repeat-y;
 
       @media only screen and (max-width: 600px) {
-        height: 20%;
-        top: 42%;
-        // background-color: red;
+        height: 40%;
+        top: 25%;
+        opacity: 0.7;
+      }
+      @media only screen and (max-width: 400px) {
+        top: 30%;
       }
     }
     @media only screen and (max-width: 1000px) {
@@ -365,13 +410,17 @@ a {
     &-1 {
       background: url('../images/Background/back.png') repeat,
         url('../images/Background/high.png') no-repeat, black;
-      background-position: 50% -520px;
+      background-position: 50% -150px;
+      max-width: 100%;
+      width: 100%;
       padding-top: 55px;
       padding-bottom: 46px;
       @media only screen and (max-width: 1000px) {
         padding-top: 150px;
-        max-width: 100%;
-        width: 100%;
+      }
+      @media only screen and (max-width: 768px) {
+        padding-left: 50px;
+        padding-right: 50px;
       }
     }
   }
@@ -379,9 +428,19 @@ a {
     margin-bottom: 28px;
     font-size: 42px;
     line-height: 40px;
+    text-shadow: none !important;
+    @media only screen and (max-width: 768px) {
+      line-height: 50px;
+    }
     @media only screen and (max-width: 576px) {
       font-size: 30px;
       line-height: 37px;
     }
   }
+}
+
+.footer {
+  background: url('../images/Background/back.png') repeat,
+    url('../images/Background/high.png') no-repeat, black;
+  background-position: 50% 100%;
 }
