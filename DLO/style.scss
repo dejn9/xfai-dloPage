@@ -29,7 +29,7 @@ a {
 }
 .dlo {
   &__hero {
-    padding-top: 190px;
+    padding-top: 185px;
     color: white;
     text-align: center;
     background-image: url('/DLO/BackgroundPattern.png');
@@ -52,7 +52,7 @@ a {
       position: relative;
       display: inline-block;
       @media only screen and (max-width: 1150px) {
-        padding-top: 150px;
+        padding-top: 135px;
       }
       @media only screen and (max-width: 768px) {
         line-height: 80px;
@@ -61,7 +61,7 @@ a {
       @media only screen and (max-width: 576px) {
         font-size: 40px;
         line-height: 53px;
-        margin-top: -60px;
+        margin-top: -45px;
       }
     }
     &-paragraph {
@@ -108,7 +108,7 @@ a {
         content: '';
         background: #fc307b;
         width: 50px;
-        height: 1px;
+        height: 2px;
         left: 0;
         bottom: -25px;
         position: absolute;
@@ -146,9 +146,10 @@ a {
           }
         }
         @media only screen and (max-width: 768px) {
-          margin-bottom: 50px;
+          margin-bottom: 100px;
         }
         @media only screen and (max-width: 576px) {
+          margin-bottom: 30px;
           img {
             right: -200px;
           }
@@ -172,9 +173,12 @@ a {
           }
         }
         @media only screen and (max-width: 768px) {
-          margin-bottom: 50px;
+          margin-bottom: 100px;
+          margin-top: 230px;
         }
         @media only screen and (max-width: 576px) {
+          margin-top: 180px;
+          margin-bottom: 30px;
           img {
             left: 180px;
           }
@@ -226,6 +230,10 @@ a {
           z-index: 15;
           max-width: 100%;
           top: 30px;
+          p {
+            font-size: 16px;
+            line-height: 29px;
+          }
         }
       }
     }
@@ -304,12 +312,19 @@ a {
   @media only screen and (max-width: 1300px) {
     padding-top: 150px;
   }
+  @media only screen and (max-width: 768px) {
+    padding-top: 50px;
+  }
+  @media only screen and (max-width: 576px) {
+    padding-top: 0px;
+  }
   .bg {
     background: url('../images/joinTheRevolution/im4.png');
     background-repeat: no-repeat;
     height: 100%;
     background-size: cover;
     overflow-x: hidden;
+    overflow-y: hidden;
     background-position: 50% 50%;
     position: relative;
     border: 1px solid #fc307b;
@@ -327,8 +342,9 @@ a {
       background-repeat: repeat-y;
 
       @media only screen and (max-width: 600px) {
-        height: 40%;
+        height: 90%;
         top: 25%;
+        overflow: hidden;
         opacity: 0.7;
       }
       @media only screen and (max-width: 400px) {

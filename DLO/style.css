@@ -35,7 +35,7 @@ a {
 }
 
 .dlo__hero {
-  padding-top: 190px;
+  padding-top: 185px;
   color: white;
   text-align: center;
   background-image: url("/DLO/BackgroundPattern.png");
@@ -60,7 +60,7 @@ a {
 }
 @media only screen and (max-width: 1150px) {
   .dlo__hero-heading {
-    padding-top: 150px;
+    padding-top: 135px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -73,7 +73,7 @@ a {
   .dlo__hero-heading {
     font-size: 40px;
     line-height: 53px;
-    margin-top: -60px;
+    margin-top: -45px;
   }
 }
 .dlo__hero-paragraph {
@@ -133,7 +133,7 @@ a {
   content: "";
   background: #fc307b;
   width: 50px;
-  height: 1px;
+  height: 2px;
   left: 0;
   bottom: -25px;
   position: absolute;
@@ -172,10 +172,13 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .dlo__features-item:first-of-type, .dlo__features-item:nth-of-type(3) {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 }
 @media only screen and (max-width: 576px) {
+  .dlo__features-item:first-of-type, .dlo__features-item:nth-of-type(3) {
+    margin-bottom: 30px;
+  }
   .dlo__features-item:first-of-type img, .dlo__features-item:nth-of-type(3) img {
     right: -200px;
   }
@@ -200,10 +203,15 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .dlo__features-item:nth-of-type(2), .dlo__features-item:last-of-type {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    margin-top: 230px;
   }
 }
 @media only screen and (max-width: 576px) {
+  .dlo__features-item:nth-of-type(2), .dlo__features-item:last-of-type {
+    margin-top: 180px;
+    margin-bottom: 30px;
+  }
   .dlo__features-item:nth-of-type(2) img, .dlo__features-item:last-of-type img {
     left: 180px;
   }
@@ -260,6 +268,10 @@ a {
     z-index: 15;
     max-width: 100%;
     top: 30px;
+  }
+  .dlo__features-item .text p {
+    font-size: 16px;
+    line-height: 29px;
   }
 }
 
@@ -338,12 +350,23 @@ a {
     padding-top: 150px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .joinTheRevolution {
+    padding-top: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .joinTheRevolution {
+    padding-top: 0px;
+  }
+}
 .joinTheRevolution .bg {
   background: url("../images/joinTheRevolution/im4.png");
   background-repeat: no-repeat;
   height: 100%;
   background-size: cover;
   overflow-x: hidden;
+  overflow-y: hidden;
   background-position: 50% 50%;
   position: relative;
   border: 1px solid #fc307b;
@@ -362,8 +385,9 @@ a {
 }
 @media only screen and (max-width: 600px) {
   .joinTheRevolution .bg::after {
-    height: 40%;
+    height: 90%;
     top: 25%;
+    overflow: hidden;
     opacity: 0.7;
   }
 }

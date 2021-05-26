@@ -262,6 +262,9 @@ a {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+.header .container .whitePaper {
+  margin-left: 43px;
+}
 .header .container .telegramHeaderIcon,
 .header .container .twitterHeaderIcon,
 .header .container .github,
@@ -437,7 +440,7 @@ a {
     color: white;
   }
   to {
-    color: #FC307B;
+    color: #fc307b;
   }
 }
 @-moz-keyframes color_change {
@@ -445,7 +448,7 @@ a {
     color: white;
   }
   to {
-    color: #FC307B;
+    color: #fc307b;
   }
 }
 @-ms-keyframes color_change {
@@ -453,7 +456,7 @@ a {
     color: white;
   }
   to {
-    color: #FC307B;
+    color: #fc307b;
   }
 }
 @-o-keyframes color_change {
@@ -461,7 +464,7 @@ a {
     color: white;
   }
   to {
-    color: #FC307B;
+    color: #fc307b;
   }
 }
 @keyframes color_change {
@@ -469,7 +472,7 @@ a {
     color: white;
   }
   to {
-    color: #FC307B;
+    color: #fc307b;
   }
 }
 .btn-farm {
