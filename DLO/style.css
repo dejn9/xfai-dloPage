@@ -322,27 +322,34 @@ a {
 }
 @media only screen and (max-width: 768px) {
   .dlo__btn::before {
-    padding: 19px 5px !important;
-    height: auto;
+    font-size: 23px;
+    line-height: 31px;
+    padding: 19px auto !important;
   }
 }
-.dlo__btn:hover::before {
-  opacity: 0;
+@media only screen and (max-width: 450px) {
+  .dlo__btn::before {
+    max-width: 250px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .dlo__btn {
     font-size: 23px;
     line-height: 31px;
-    padding: 19px 5px !important;
+    padding: 19px auto !important;
   }
 }
 @media only screen and (max-width: 450px) {
   .dlo__btn {
-    font-size: 20px;
-    line-height: 27px;
-    min-width: 100%;
     margin-top: 25px;
+    max-width: 250px;
+    min-width: 250px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
+}
+.dlo__btn:hover::before {
+  opacity: 0;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -385,13 +392,12 @@ a {
 }
 @media only screen and (max-width: 600px) {
   .joinTheRevolution .bg::after {
-    height: 90%;
+    background: url("../images/hero/Rectangle 485.png");
     top: 25%;
-    overflow: hidden;
-    opacity: 0.7;
+    height: 360px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 460px) {
   .joinTheRevolution .bg::after {
     top: 30%;
   }
