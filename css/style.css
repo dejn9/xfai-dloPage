@@ -481,7 +481,7 @@ span {
 }
 @media only screen and (max-width: 1250px) {
   .lgeHere {
-    margin-top: 40px;
+    margin-top: 0px;
     padding-top: 100px;
   }
 }
@@ -524,7 +524,7 @@ span {
   background: url("../images/Background/back.png") repeat-x, -o-linear-gradient(top, #212121 0%, #000000 70%);
   background: url("../images/Background/back.png") repeat-x, linear-gradient(to bottom, #212121 0%, #000000 70%);
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .lgeHere .bg {
     top: 50px;
   }
