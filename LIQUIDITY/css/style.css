@@ -666,6 +666,9 @@ a {
     font-size: 23px;
   }
 }
+.hero .left .btn__primary {
+  margin-top: 50px;
+}
 
 .heroMT {
   margin-top: 64px;
