@@ -282,7 +282,7 @@ a {
   margin-left: 0;
 }
 .header .container .icons {
-  margin-left: auto;
+  margin-left: 50px;
 }
 @media only screen and (max-width: 1250px) {
   .header .container {
