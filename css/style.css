@@ -481,8 +481,8 @@ span {
 }
 @media only screen and (max-width: 1250px) {
   .lgeHere {
-    margin-top: 50px;
-    padding-top: 140px;
+    margin-top: 40px;
+    padding-top: 100px;
   }
 }
 @media only screen and (max-width: 768px) {
