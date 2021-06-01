@@ -16,7 +16,7 @@
     align-items: center;
     padding: 12px 0;
 
-    @media only screen and (max-width: 1150px) {
+    @media only screen and (max-width: 1250px) {
       padding: 4.25px 0;
     }
 
@@ -35,7 +35,7 @@
       margin: 0 45px;
       transition: all 0.3s ease-in-out;
 
-      @media only screen and (max-width: 1150px) {
+      @media only screen and (max-width: 1250px) {
         display: none;
       }
 
@@ -75,7 +75,7 @@
         transform: scaleX(1);
       }
 
-      @media only screen and (max-width: 1150px) {
+      @media only screen and (max-width: 1250px) {
         display: none;
       }
     }
@@ -104,7 +104,7 @@
     .icons {
       margin-left: 50px;
 
-      @media only screen and (max-width: 1150px) {
+      @media only screen and (max-width: 1250px) {
         display: none;
       }
     }
@@ -112,7 +112,7 @@
     .imgLogo {
       transition: all 0.3s ease-in-out;
 
-      @media only screen and (max-width: 1150px) {
+      @media only screen and (max-width: 1250px) {
         max-width: 48px;
       }
     }
@@ -130,7 +130,7 @@
 }
 
 .small {
-  @media only screen and (min-width: 1150px) {
+  @media only screen and (min-width: 1250px) {
     height: 50px !important;
 
     .line {
@@ -161,7 +161,7 @@
 .mobileMenu {
   display: none;
 
-  @media only screen and (max-width: 1150px) {
+  @media only screen and (max-width: 1250px) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -196,7 +196,7 @@
   align-items: center;
   justify-content: center;
 
-  @media only screen and (min-width: 1151px) {
+  @media only screen and (min-width: 1251px) {
     display: none;
   }
 
@@ -256,7 +256,7 @@
 
 .invisible {
   opacity: 0 !important;
-  @media only screen and (min-width: 1150px) {
+  @media only screen and (min-width: 1250px) {
     opacity: 1 !important;
   }
 }
@@ -329,7 +329,7 @@
   line-height: 24px;
   font-family: 'EuclidCircular', Arial;
   background: linear-gradient(104deg, #a22dc9 0%, #a22dc9 100%);
-  @media only screen and (max-width: 1150px) {
+  @media only screen and (max-width: 1250px) {
     height: 30px;
     min-width: 170px;
     margin-right: 30px;

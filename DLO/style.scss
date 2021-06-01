@@ -243,12 +243,12 @@ a {
 .header {
   .container {
     .lqd {
-      margin-left: 43px;
+      margin: 0 43px;
     }
     .icons {
       margin-left: auto;
     }
-    @media only screen and (max-width: 1150px) {
+    @media only screen and (max-width: 1250px) {
       justify-content: space-between;
     }
   }
@@ -409,12 +409,13 @@ a {
   border-radius: 10px;
   font-size: 27px;
   line-height: 37px;
+  max-width: 367px;
   font-weight: 500;
   min-width: 367px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 24px 120px !important;
+  padding: 24px 5px !important;
   background: linear-gradient(104deg, #a22dc9 0%, #a22dc9 100%);
   opacity: 1;
   position: relative;

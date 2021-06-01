@@ -136,7 +136,7 @@ span {
   align-items: center;
   padding: 12px 0;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .header .container {
     padding: 4.25px 0;
   }
@@ -156,7 +156,7 @@ span {
   margin: 0 45px;
   transition: all 0.3s ease-in-out;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .header .container .line {
     display: none;
   }
@@ -197,7 +197,7 @@ span {
   -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .header .container .whitePaper,
 .header .container .lqd {
     display: none;
@@ -230,7 +230,7 @@ span {
 .header .container .icons {
   margin-left: 50px;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .header .container .icons {
     display: none;
   }
@@ -238,7 +238,7 @@ span {
 .header .container .imgLogo {
   transition: all 0.3s ease-in-out;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .header .container .imgLogo {
     max-width: 48px;
   }
@@ -254,7 +254,7 @@ span {
   z-index: 50;
 }
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1250px) {
   .small {
     height: 50px !important;
   }
@@ -281,7 +281,7 @@ span {
 .mobileMenu {
   display: none;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .mobileMenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -317,7 +317,7 @@ span {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (min-width: 1151px) {
+@media only screen and (min-width: 1251px) {
   .sidePanel {
     display: none;
   }
@@ -377,7 +377,7 @@ span {
 .invisible {
   opacity: 0 !important;
 }
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1250px) {
   .invisible {
     opacity: 1 !important;
   }
@@ -442,7 +442,7 @@ span {
   font-family: "EuclidCircular", Arial;
   background: linear-gradient(104deg, #a22dc9 0%, #a22dc9 100%);
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .btn-farm {
     height: 30px;
     min-width: 170px;
