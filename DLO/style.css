@@ -287,71 +287,6 @@ a {
   }
 }
 
-.dlo__btn {
-  border-radius: 10px;
-  font-size: 27px;
-  line-height: 37px;
-  font-weight: 500;
-  min-width: 367px;
-  display: inline-flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 24px 120px;
-  background: linear-gradient(104deg, #a22dc9 0%, #a22dc9 100%);
-  opacity: 1;
-  position: relative;
-  transition: opacity 0.5s ease-in-out;
-  color: white;
-}
-.dlo__btn::before {
-  content: "Join today";
-  position: absolute;
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  left: 0;
-  top: 0;
-  padding: 24px auto;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  background: linear-gradient(104deg, #fc307b 0%, #a22dc9 100%);
-  transition: opacity 0.5s ease-in-out;
-  z-index: 2;
-}
-@media only screen and (max-width: 768px) {
-  .dlo__btn::before {
-    font-size: 23px;
-    line-height: 31px;
-    padding: 19px auto !important;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .dlo__btn::before {
-    max-width: 250px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .dlo__btn {
-    font-size: 23px;
-    line-height: 31px;
-    padding: 19px auto !important;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .dlo__btn {
-    margin-top: 25px;
-    max-width: 250px;
-    min-width: 250px;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-  }
-}
-.dlo__btn:hover::before {
-  opacity: 0;
-}
-
 @media only screen and (max-width: 1300px) {
   .joinTheRevolution {
     padding-top: 150px;
@@ -393,14 +328,10 @@ a {
 @media only screen and (max-width: 600px) {
   .joinTheRevolution .bg::after {
     background: url("../images/hero/Rectangle 485.png");
-    top: 25%;
-    height: 360px;
-    left: -50px;
-  }
-}
-@media only screen and (max-width: 460px) {
-  .joinTheRevolution .bg::after {
-    top: 30%;
+    top: 55%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -527,6 +458,68 @@ a {
 .footer {
   background: url("../images/Background/back.png") repeat, url("../images/Background/high.png") no-repeat, black;
   background-position: 50% 100%;
+}
+
+.dlo__btn {
+  border-radius: 10px;
+  font-size: 27px;
+  line-height: 37px;
+  font-weight: 500;
+  min-width: 367px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 24px 120px !important;
+  background: linear-gradient(104deg, #a22dc9 0%, #a22dc9 100%);
+  opacity: 1;
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  .dlo__btn {
+    font-size: 23px;
+    line-height: 31px;
+    padding: 19px 5px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .dlo__btn {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .dlo__btn {
+    margin-top: 25px;
+    min-width: 250px;
+  }
+}
+.dlo__btn::before {
+  content: "Join today";
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  padding: 24px auto !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(104deg, #fc307b 0%, #a22dc9 100%);
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
+}
+@media only screen and (max-width: 768px) {
+  .dlo__btn::before {
+    font-size: 23px;
+    line-height: 31px;
+    padding: 19px auto !important;
+  }
+}
+.dlo__btn:hover::before {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
