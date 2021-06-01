@@ -276,10 +276,10 @@ a {
 }
 
 .header .container .lqd {
-  margin: 0 43px;
+  margin: 0 43px !important;
 }
-.header .container .lqd + .whitePaper {
-  margin-left: 0;
+.header .container .whitePaper {
+  margin: 0;
 }
 .header .container .icons {
   margin-left: 50px;

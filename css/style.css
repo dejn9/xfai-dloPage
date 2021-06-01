@@ -204,14 +204,14 @@ span {
   }
 }
 .header .container .lqd {
-  margin-left: 43px;
+  margin: 0 43px;
   animation-name: color_change;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 .header .container .whitePaper {
-  margin-left: 43px;
+  margin-left: 0;
 }
 .header .container .telegramHeaderIcon,
 .header .container .twitterHeaderIcon,

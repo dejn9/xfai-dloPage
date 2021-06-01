@@ -188,7 +188,7 @@ a {
   align-items: center;
   padding: 12px 0;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .header .container {
     padding: 4.25px 0;
   }
@@ -208,7 +208,7 @@ a {
   margin: 0 45px;
   transition: all 0.3s ease-in-out;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .header .container .line {
     display: none;
   }
@@ -249,21 +249,18 @@ a {
   -ms-transform: scaleX(1);
   transform: scaleX(1);
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .header .container .whitePaper,
 .header .container .lqd {
     display: none;
   }
 }
 .header .container .lqd {
-  margin-left: 43px;
+  margin: 0 43px;
   animation-name: color_change;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
-.header .container .whitePaper {
-  margin-left: 43px;
 }
 .header .container .telegramHeaderIcon,
 .header .container .twitterHeaderIcon,
@@ -282,7 +279,7 @@ a {
 .header .container .icons {
   margin-left: 50px;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .header .container .icons {
     display: none;
   }
@@ -290,7 +287,7 @@ a {
 .header .container .imgLogo {
   transition: all 0.3s ease-in-out;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .header .container .imgLogo {
     max-width: 48px;
   }
@@ -306,7 +303,7 @@ a {
   z-index: 50;
 }
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1250px) {
   .small {
     height: 50px !important;
   }
@@ -333,7 +330,7 @@ a {
 .mobileMenu {
   display: none;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .mobileMenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -429,7 +426,7 @@ a {
 .invisible {
   opacity: 0 !important;
 }
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1250px) {
   .invisible {
     opacity: 1 !important;
   }
@@ -494,7 +491,7 @@ a {
   font-family: "EuclidCircular", Arial;
   background: linear-gradient(104deg, #a22dc9 0%, #a22dc9 100%);
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .btn-farm {
     height: 30px;
     min-width: 170px;
@@ -534,10 +531,10 @@ a {
   padding-bottom: 70px;
   height: 631px;
   margin-top: 115px;
-  border-bottom: 1px solid #FC307B;
-  border-top: 1px solid #FC307B;
+  border-bottom: 1px solid #fc307b;
+  border-top: 1px solid #fc307b;
 }
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
   .hero {
     margin-top: 64px;
   }
@@ -615,7 +612,7 @@ a {
 .hero__heading {
   font-size: 80px;
   line-height: 104px;
-  color: #FC307B;
+  color: #fc307b;
   margin-bottom: 60px;
 }
 @media only screen and (max-width: 600px) {
@@ -635,7 +632,7 @@ a {
   font-family: "Gobold";
 }
 .hero__paragraph span, .hero__paragraph-2 span {
-  color: #FC307B;
+  color: #fc307b;
 }
 .hero__paragraph {
   font-size: 28px;
