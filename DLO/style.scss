@@ -32,7 +32,7 @@ a {
     padding-top: 185px;
     color: white;
     text-align: center;
-    background-image: url('/DLO/BackgroundPattern.png');
+    background-image: url('../DLO/BackgroundPattern.png');
     background-repeat: repeat-x;
     background-position-y: 100px;
     @media only screen and (max-width: 1150px) {
@@ -243,7 +243,7 @@ a {
 .header {
   .container {
     .lqd {
-      margin: 0 43px;
+      margin-left: 43px;
     }
     .icons {
       margin-left: auto;
@@ -340,7 +340,7 @@ a {
     &::after {
       content: '';
       position: absolute;
-      background: url('/images/hero/Rectangle\ 476.png');
+      background: url('../images/hero/Rectangle\ 476.png');
       top: 0;
       left: 0;
       height: 100%;
@@ -349,9 +349,9 @@ a {
 
       @media only screen and (max-width: 600px) {
         background: url('../images/hero/Rectangle\ 485.png');
-        // background: red;
         top: 25%;
         height: 360px;
+        left: -50px;
       }
       @media only screen and (max-width: 460px) {
         top: 30%;
